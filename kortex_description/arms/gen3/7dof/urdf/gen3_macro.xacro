@@ -6,7 +6,7 @@
   <xacro:property name="last_arm_link" value="end_effector_link"/>
 
   <xacro:macro name="load_arm" params="parent:='' dof vision *origin">
-      <link name="base_link">
+      <link name="kortex_base_link">
         <inertial>
           <origin xyz="-0.000648 -0.000166 0.084487" rpy="0 0 0" />
           <mass value="1.697" />
@@ -55,7 +55,7 @@
       type="continuous">
       <origin xyz="0 0 0.15643" rpy="3.1416 2.7629E-18 -4.9305E-36" />
       <parent
-        link="base_link" />
+        link="kortex_base_link" />
       <child
         link="shoulder_link" />
       <axis
